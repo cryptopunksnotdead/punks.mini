@@ -1,4 +1,3 @@
-beer.db.labels
-==============
+# beer.db.labels
 
 beer labels
