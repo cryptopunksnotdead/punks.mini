@@ -28,6 +28,8 @@ ATTRIBUTES = {
       'orange',
       'blue',
       'blue_female',
+      'green',
+      'green_female',
    ],
    hair: [
       'blonde_bob',
@@ -90,6 +92,7 @@ ATTRIBUTES = {
       'vr',
       'small_shades',
       'laser_eyes',
+      'laser_eyes_gold',
       'eye_mask',
       'horned_rim_glasses',
       'eye_patch',
