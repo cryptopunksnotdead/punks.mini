@@ -1,3 +1,6 @@
-# beer.db.labels
+# Punks, The Mini Edition (12×12px)
 
-beer labels
+yes, you can - generate your own punk minis in the 12×12px format
+
+
+
