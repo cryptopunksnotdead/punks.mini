@@ -1,9 +1,15 @@
 # Punks, The Mini Edition (12×12px)
 
+
+## What's News? Updates
+
+**NEW!**   Free self-inscribe first-is-first mint (via [bitcoin ordinal inscriptions](https://ordinals.com)) of Punks 12px (10000 max.) started. See [**orc721.github.io/punks12px »**](https://orc721.github.io/punks12px) 
+
+
+
+## Intro
+
 yes, you can - generate your own punk minis in the 12×12px format
-
-
-
 
 
 ### Top
