@@ -6,6 +6,9 @@
 **NEW!**   Free self-inscribe first-is-first mint (via [bitcoin ordinal inscriptions](https://ordinals.com)) of Punks 12px (10000 max.) started. See [**orc721.github.io/punks12px »**](https://orc721.github.io/punks12px) 
 
 
+**NEW!**  Free self-inscribe first-is-first mint (via [ethscriptions on ethereum](https://ethscriptions.com) of Punks 12px, The Ethscribe Edition (10000 max.). See [**github.com/0xCompute/punks12px »**](https://github.com/0xCompute/punks12px) 
+
+
 
 ## Intro
 
