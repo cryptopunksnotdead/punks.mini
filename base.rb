@@ -158,6 +158,8 @@ ATTRIBUTES = {
       'black_lipstick',
       'purple_lipstick',
       'hot_lipstick',  
+      'pink_lipstick',
+      'burgundy_lipstick',
       'medical_mask',
       'buck_teeth',
 ],
