@@ -6,7 +6,12 @@
 **NEW!**   Free self-inscribe first-is-first mint (via [bitcoin ordinal inscriptions](https://ordinals.com)) of Punks 12px (10000 max.) started. See [**orc721.github.io/punks12px »**](https://orc721.github.io/punks12px) 
 
 
-**NEW!**  Free self-inscribe first-is-first mint (via [ethscriptions on ethereum](https://ethscriptions.com) of Punks 12px, The Ethscribe Edition (10000 max.). See [**github.com/0xCompute/punks12px »**](https://github.com/0xCompute/punks12px) 
+**NEW!**  Free self-inscribe first-is-first mint (via [ethscriptions on ethereum](https://ethscriptions.com) of Punks 12px, The Ethscribe Edition  Vol. 1 - Classic (10000 max.) &
+Vol. 2 - Alien Invasion, The Martians (1000 max.)
+ See [**0xcompute.github.io/punks12px.vol2 »**](https://0xcompute.github.io/punks12px.vol2) 
+
+
+**NEW!** D.I.Y. (Create & Download) Punks 12px Builder by [@0xAvocato (SkullCat)](https://twitter.com/0xAvocato/status/1744719873526439992)  Thanks!  See [**illegalmemes.wtf/12pxpunks »**](https://illegalmemes.wtf/12pxpunks)
 
 
 
