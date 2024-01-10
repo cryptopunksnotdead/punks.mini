@@ -71,4 +71,44 @@ composite.save( "./tmp2/sub1kminis.png" )
 composite.zoom(4).save( "./tmp2/sub1kminis@4x.png" )
 
 
+
+###
+# ordinal (sub1k) punks   vol. 2
+specs = parse_data( <<DATA )
+    ape gold, laser eyes  #0
+    ape blue, buck teeth, cowboy hat  #5
+ 
+    vampire, demon horns   #8
+    vampire, bubble gum, spots, do rag  #26
+ 
+    mummy, beanie   #27
+    mummy, crown    #41
+ 
+    vampire female, heart shades  #58
+
+    mummy, dark hair  #72
+    vampire female, dark hair   #81
+
+    mummy, cowboy hat, eye mask (a)  # 82
+ 
+   #  vampire, demon horns, chinstrap  #90
+DATA
+
+composite  = ImageComposite.new( 5, 2,   ## 5, 5, 
+                                  width: 12, height: 12 )
+
+specs.each_with_index do |spec, i|
+     img = generate( *spec)
+     img.save( "./tmp/sub1kmini#{i}_vol2.png" )
+     img.zoom(10).save( "./tmp/@10x/sub1kmini#{i}_vol2@10x.png" )
+     composite << img
+end
+
+
+composite.save( "./tmp2/sub1kminis_vol2.png" )
+composite.zoom(4).save( "./tmp2/sub1kminis_vol2@4x.png" )
+composite.zoom(10).save( "./tmp2/sub1kminis_vol2@10x.png" )
+
+
+
 puts "bye"
