@@ -76,25 +76,53 @@ composite.zoom(4).save( "./tmp2/sub1kminis@4x.png" )
 # ordinal (sub1k) punks   vol. 2
 specs = parse_data( <<DATA )
     ape gold, laser eyes  #0
+    female 1, flowers, gold chain   #3
+ 
     ape blue, buck teeth, cowboy hat  #5
  
     vampire, demon horns   #8
+ 
+    ape zombie, bubble gum  #20
+ 
+    male 2, sombrero, mustache   #25
+
     vampire, bubble gum, spots, do rag  #26
  
     mummy, beanie   #27
+
+    male 2, jester hat  #30
+    male 1, cap red    #31
+
+    male 1, buck teeth, 3D glasses, cigarette  #37
+ 
     mummy, crown    #41
  
+    demon female, cigar, choker  #42
+    female 4, frumpy hair, nerd glasses   #43
+    ape alien, goat, fedora  #50
+
+    demon female, frumpy hair, clown nose  #53
+    male 3, heart shades, do rag  #54
+ 
+
     vampire female, heart shades  #58
 
+    ape female, sombrero #66
+
+
     mummy, dark hair  #72
+    orc       #80
     vampire female, dark hair   #81
 
     mummy, cowboy hat, eye mask (a)  # 82
  
-   #  vampire, demon horns, chinstrap  #90
+    vampire, demon horns, chinstrap  #90
+
+    ape alien, eye patch, frumpy hair  #94
+
 DATA
 
-composite  = ImageComposite.new( 5, 2,   ## 5, 5, 
+composite  = ImageComposite.new( 5, 5,    
                                   width: 12, height: 12 )
 
 specs.each_with_index do |spec, i|
