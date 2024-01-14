@@ -339,6 +339,39 @@ in 4x
 
 
 
+## Bonus -  Factory of Modern Originals (FoMO)
+
+Do-it-yourself (DIY) - yes, you can! - fab(criate) your own unique punks in 
+12×12px  w/ text attributes (via built-in spritesheets) incl. 2x/4x/8x zoom for bigger sizes and more.
+
+
+Let's try to fab(ricate) a pink marilyn:
+
+```
+$ fab punk12 pink_female blonde_bob mole --zoom=10
+```
+
+resulting in:
+
+![](i/punk12_pink_female@10x.png)
+
+or an ultra-rare (green martian) alien with hoodie:
+
+```
+$ fab punk12 alien_green hoodie --zoom=10
+```
+
+resulting in:
+
+![](i/punk12_alien_green@10x.png)
+
+
+
+More [**Factory of Modern Originals (FoMO) »**](https://github.com/profilepic/originals)
+
+
+
+
 
 
 ## Questions? Comments?
