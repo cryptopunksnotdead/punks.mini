@@ -227,6 +227,119 @@ in 4x
 
 
 
+### Orange-Pilled
+
+let's try all (bitcoin) orange punks:
+
+``` ruby
+require 'pixelart'
+
+require_relative 'base'
+
+###
+# orange punks  
+specs = parse_data( <<DATA )
+   orange
+   zombie orange
+   ape orange
+   alien orange
+   demon orange
+   orc orange
+   skeleton orange
+   vampire orange
+   mummy orange
+   bot orange
+
+   orange,  3d glasses, cap red
+   zombie orange, crazy hair
+   ape orange, knitted cap, earring, bubble gum
+   alien orange, spots, clown nose, clown hair blue
+   demon orange, laser eyes, pipe
+   orc orange,  eye mask, goat, gold chain 
+   skeleton orange, bandana, cigarette
+   vampire orange,  purple hair, classic shades
+   mummy orange, hoodie
+   bot orange, big beard
+DATA
+
+composite  = ImageComposite.new( 10, 2, 
+                                  width: 12, height: 12 )
+
+specs.each_with_index do |spec, i|
+     img = generate( *spec)
+     img.save( "./orange#{i}.png" )
+     img.zoom(10).save( "./orange#{i}@10x.png" )
+     composite << img
+end
+
+
+composite.save( "./oranges.png" )
+composite.zoom(4).save( "./oranges@4x.png" )
+```
+
+
+resulting in:
+
+![](i/orange0.png)
+![](i/orange1.png)
+![](i/orange2.png)
+![](i/orange3.png)
+![](i/orange4.png)
+![](i/orange5.png)
+![](i/orange6.png)
+![](i/orange7.png)
+![](i/orange8.png)
+![](i/orange9.png)
+![](i/orange10.png)
+![](i/orange11.png)
+![](i/orange12.png)
+![](i/orange13.png)
+![](i/orange14.png)
+![](i/orange15.png)
+![](i/orange16.png)
+![](i/orange17.png)
+![](i/orange18.png)
+![](i/orange19.png)
+![](i/orange20.png)
+
+
+in 10x
+
+![](i/orange0@10x.png)
+![](i/orange1@10x.png)
+![](i/orange2@10x.png)
+![](i/orange3@10x.png)
+![](i/orange4@10x.png)
+![](i/orange5@10x.png)
+![](i/orange6@10x.png)
+![](i/orange7@10x.png)
+![](i/orange8@10x.png)
+![](i/orange9@10x.png)
+![](i/orange10@10x.png)
+![](i/orange11@10x.png)
+![](i/orange12@10x.png)
+![](i/orange13@10x.png)
+![](i/orange14@10x.png)
+![](i/orange15@10x.png)
+![](i/orange16@10x.png)
+![](i/orange17@10x.png)
+![](i/orange18@10x.png)
+![](i/orange19@10x.png)
+![](i/orange20@10x.png)
+
+
+and the fam (all-in-one image composite)
+
+![](i/oranges.png)
+
+in 4x
+
+![](i/oranges@4x.png)
+
+
+
+
+
 
 ## Questions? Comments?
 
