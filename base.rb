@@ -132,6 +132,8 @@ ATTRIBUTES = {
       'jester_hat',
       'flowers',
       'sombrero',
+      'birthday_hat',
+      'bow',
    ],
    eyes: [
       '3d_glasses',
@@ -158,6 +160,7 @@ ATTRIBUTES = {
       'chinstrap',
       'big_beard',
       'luxurious_beard',
+      'luxurious_white_beard',
       'goat',
       'front_beard_dark',
       'front_beard',
@@ -191,7 +194,25 @@ ATTRIBUTES = {
       'buck_teeth',
       'demon_horns',
       'bubble_gum',
-],
+      'tears',
+      'frown',   # face expression / emotion
+  ],
+  saudis: [
+     'brown_shemagh_agal',
+     'red_shemagh',
+     'red_shemagh_agal',
+     'white_shemagh',
+     'white_shemagh_agal',
+     'white_shemagh_gold_agal',
+  ],
+  fastfood: [
+   'cap_mcd',
+   'cap_mcd_flipped',
+   'cap_mcd_white',
+   'cap_mcd_black',  
+   'cap_burgerking',
+   'cap_subway',
+  ],
 }.reduce( {} ) do |h,(category, names)| 
      names.each do |name|
         key = File.basename( name ).downcase.gsub( /[^a-z0-9]/, '' )

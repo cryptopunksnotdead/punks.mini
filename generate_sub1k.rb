@@ -139,4 +139,42 @@ composite.zoom(10).save( "./tmp2/sub1kminis_vol2@10x.png" )
 
 
 
+###
+# ordinal (sub1k) punks   vol. 3
+specs = parse_data( <<DATA )
+
+male 2, birthday hat, bubble gum   #2
+male 1, cap burger king    #7
+ 
+
+female 4, pilot helmet, silver chain, clown eyes green  #13
+female1, bow  #19
+ 
+zombie female, birthday hat, vr #39
+
+blue, cap burger king, classic shades  #46
+ 
+female 3, do rag, gold chain   #87
+DATA
+
+composite  = ImageComposite.new( 5, 5,    
+                                  width: 12, height: 12 )
+
+specs.each_with_index do |spec, i|
+     img = generate( *spec)
+     img.save( "./tmp/sub1kmini#{i}_vol3.png" )
+     img.zoom(10).save( "./tmp/@10x/sub1kmini#{i}_vol3@10x.png" )
+     composite << img
+end
+
+
+composite.save( "./tmp2/sub1kminis_vol3.png" )
+composite.zoom(4).save( "./tmp2/sub1kminis_vol3@4x.png" )
+composite.zoom(10).save( "./tmp2/sub1kminis_vol3@10x.png" )
+
+
+
+puts "bye"
+
+
 puts "bye"

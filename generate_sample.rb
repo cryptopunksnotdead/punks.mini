@@ -66,6 +66,16 @@ specs = parse_data( <<DATA )
   orc, bandana
   bot, cowboy hat
   demon, nerd glasses
+
+  male4, tears
+  male4, cowboy hat, tears, frown
+
+  male3, cap mcd
+  male3, cap mcd flipped
+  male3, cap mcd black
+  male3, cap mcd white
+  male3, cap burger king
+  male3, cap subway
 DATA
 
 
@@ -81,6 +91,7 @@ specs.each_with_index do |spec, i|
      img = generate( *spec)
      img.save( "./tmp/mini#{i}.png" )
      img.zoom(10).save( "./tmp/@10x/mini#{i}@10x.png" )
+     img.zoom(20).save( "./tmp/@20x/mini#{i}@20x.png" )
      composite << img
 end
 
