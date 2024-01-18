@@ -14,6 +14,7 @@ ATTRIBUTES = {
       'zombie_female',
       'zombie_orange',
       'ape',
+      'ape_(1bit)',
       'ape_blue',
       'ape_orange',
       'ape_gold',
@@ -79,6 +80,7 @@ ATTRIBUTES = {
       'marc_(xl)',
       'bitmap_orange',
       'bitmap_pink',
+      'bitmap_(1bit)',
    ],
    hair: [
       'blonde_bob',
@@ -132,6 +134,7 @@ ATTRIBUTES = {
       'bandana',
       'bandana_(xl)',
       'cap',
+      'cap_(1bit)',
       'cap_red',
       'cap_forward',
       'cowboy_hat',
@@ -246,6 +249,14 @@ ATTRIBUTES = {
    'cap_mcd_visor_(xl)',
    'cap_burgerking',
    'cap_subway',
+  ],
+  rgb: [     
+   'regular_shades_red',
+   'regular_shades_green',
+   'regular_shades_blue',
+   'maxibiz_laser_eyes_red',
+   'maxibiz_laser_eyes_green',
+   'maxibiz_laser_eyes_blue',
   ],
 }.reduce( {} ) do |h,(category, names)| 
      names.each do |name|
