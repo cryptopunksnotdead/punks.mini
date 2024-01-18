@@ -6,9 +6,9 @@ require_relative 'base'
 
 specs = parse_data( <<DATA )
    marc, luxurious beard, clown nose
-   marc xl, mcd visor xl
-   marc xl, bandana xl, eye patch xl
-   marc xl, cowboy hat xl, earring xl
+   marc xl, cap mcd visor (xl)
+   marc xl, bandana (xl), eye patch (xl)
+   marc xl, cowboy hat (xl), earring (xl)
 DATA
 
 
