@@ -229,7 +229,7 @@ in 4x
 
 ### Orange-Pilled
 
-let's try all (bitcoin) orange punks:
+Is orange the new black? let's try all (bitcoin) orange punks:
 
 ``` ruby
 require 'pixelart'
@@ -335,6 +335,130 @@ and the fam (all-in-one image composite)
 in 4x
 
 ![](i/oranges@4x.png)
+
+
+
+
+### Readymades - The Presidents (of The United States of Amercia)
+
+Let's try readymade characters. Let's start with the presidents (and presidents to be):
+
+``` ruby
+require 'pixelart'
+
+require_relative 'base'
+
+###
+# the presidents
+specs = parse_data( <<DATA )
+   joe
+   joe (a), cap blue
+   joe, clown eyes blue, clown nose 
+   joe, 3d glasses
+   joe, regular shades
+   joe (a), cap blue, regular shades
+   joe, laser eyes
+
+   donald
+   donald (a), cap red
+   donald (a), cap mcd
+   donald, clown eyes green, clown nose
+   donald, 3d glasses
+   donald, laser eyes
+   donald, regular shades
+ 
+   nikki
+   nikki (a)
+   nikki, big shades, earring
+   nikki, 3d glasses
+   nikki, laser eyes, gold chain
+   nikki (a), vr
+   nikki (b), hoodie red
+DATA
+
+composite  = ImageComposite.new( 7, 3, 
+                                  width: 12, height: 12 )
+
+specs.each_with_index do |spec, i|
+     img = generate( *spec)
+     
+     img.save( "./president#{i}.png" )
+     img.zoom(10).save( "./president#{i}@10x.png" )
+     composite << img
+end
+
+
+composite.save( "./presidents.png" )
+composite.zoom(4).save( "./presidents@4x.png" )
+```
+
+resulting in:
+
+![](i/president0.png)
+![](i/president1.png)
+![](i/president2.png)
+![](i/president3.png)
+![](i/president4.png)
+![](i/president5.png)
+![](i/president6.png)
+![](i/president7.png)
+![](i/president8.png)
+![](i/president9.png)
+![](i/president10.png)
+![](i/president11.png)
+![](i/president12.png)
+![](i/president13.png)
+![](i/president14.png)
+![](i/president15.png)
+![](i/president16.png)
+![](i/president17.png)
+![](i/president18.png)
+![](i/president19.png)
+![](i/president20.png)
+
+
+in 10x
+
+![](i/president0@10x.png)
+![](i/president1@10x.png)
+![](i/president2@10x.png)
+![](i/president3@10x.png)
+![](i/president4@10x.png)
+![](i/president5@10x.png)
+![](i/president6@10x.png)
+![](i/president7@10x.png)
+![](i/president8@10x.png)
+![](i/president9@10x.png)
+![](i/president10@10x.png)
+![](i/president11@10x.png)
+![](i/president12@10x.png)
+![](i/president13@10x.png)
+![](i/president14@10x.png)
+![](i/president15@10x.png)
+![](i/president16@10x.png)
+![](i/president17@10x.png)
+![](i/president18@10x.png)
+![](i/president19@10x.png)
+![](i/president20@10x.png)
+
+
+and the fam (all-in-one image composite)
+
+![](i/presidents.png)
+
+in 4x
+
+![](i/presidents@4x.png)
+
+
+
+
+### Punk Rocks
+
+Let's rock the punks:
+
+
+
 
 
 

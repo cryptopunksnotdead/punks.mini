@@ -6,25 +6,25 @@ require_relative 'base'
 
 specs = parse_data( <<DATA )
    rock gray
-   rock gray, peak spike red (rock)
-   rock gray, top hat (rock)
-   rock gray, knitted cap (rock), 3d glasses (rock)
+   rock gray, peak spike red
+   rock gray, top hat 
+   rock gray, knitted cap, 3d glasses 
    rock block gray
-   rock block gray, 3d glasses (rock)
+   rock block gray, 3d glasses 
  
-   rock gray, peak spike (rock), laser eyes (rock)
-   rock gray, laser eyes (rock)
-   rock_gold
-   rock_gold, peak spike (rock), laser eyes (rock)
-   rock_block_gold
-   rock_block_gold, laser eyes (rock)
+   rock gray, peak spike, laser eyes 
+   rock gray, laser eyes 
+   rock gold
+   rock gold, peak spike, laser eyes 
+   rock block gold
+   rock block gold, laser eyes 
 
-   rock_pink
-   rock_pink, peak spike blonde (rock), laser eyes blue (rock)
-   rock_pepe
-   rock_pepe, peak spike red (rock)
-   rock_pepe, top hat (rock)
-   rock_pepe, cap red (rock)
+   rock pink
+   rock pink, peak spike blonde, laser eyes blue 
+   rock pepe
+   rock pepe, peak spike red 
+   rock pepe, top hat 
+   rock pepe, cap red 
 DATA
 
 

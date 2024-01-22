@@ -75,13 +75,13 @@ ATTRIBUTES = {
       'vangogh',
       'frida',
       'frida_(a)',
+      'joe',
+      'joe_(a)',
       'donald',
       'donald_(a)',
       'nikki',
       'nikki_(a)',
       'nikki_(b)',
-      'joe',
-      'joe_(a)',
       'mundl',
       'marc',
       'marc_(xl)',
@@ -334,10 +334,23 @@ def generate( *attributes )
    ## check for male/female gender
    gender = keys[0].index( 'female' ) ? 'f' : 'm'
 
+   rock   = keys[0].index( 'rock' ) ? true : false
+
+ 
    keys.each_with_index do |key,i|
+   
         img = nil
-        img = ATTRIBUTES[ "#{key}#{gender}" ]   if i > 0    ## try gender-specific first for accessores (not base e.g. i==0)
-        img = ATTRIBUTES[ key ]    unless img       
+        if rock
+         img =  if i > 0   ## always use rock specific tiles
+                    ATTRIBUTES[ "#{key}rock" ]
+                else
+                    ATTRIBUTES[ key ]
+                end 
+        else
+          img = ATTRIBUTES[ "#{key}#{gender}" ]   if i > 0    ## try gender-specific first for accessores (not base e.g. i==0)
+          img = ATTRIBUTES[ key ]    unless img      
+        end 
+
         if img.nil?
            puts "!! attribute with key #{key} not found; sorry"
            exit 1
