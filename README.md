@@ -20,6 +20,14 @@ Vol. 2 - Alien Invasion, The Martians (1000 max.)
 yes, you can - generate your own punk minis in the 12×12px format
 
 
+[Top](#top) • 
+[Ordinal Punks](#ordinal-punks) •
+[Orange-Pilled](#orange-pilled) •
+[Readymades - The Presidents (of The United States of Amercia)](#readymades---the-presidents-of-the-united-states-of-amercia) •
+[Punk Rocks](#punk-rocks)
+
+
+
 ### Top
 
 let's try the top selling (matt & john's crypto) punks (anno 2017):
@@ -457,6 +465,103 @@ in 4x
 
 Let's rock the punks:
 
+```ruby
+require 'pixelart'
+
+require_relative 'base'
+
+###
+# punk rocks
+specs = parse_data( <<DATA )
+   rock gray
+   rock gray, peak spike red
+   rock gray, top hat 
+   rock gray, knitted cap, 3d glasses 
+   rock block gray
+   rock block gray, 3d glasses 
+ 
+   rock gray, peak spike, laser eyes 
+   rock gray, laser eyes 
+   rock gold
+   rock gold, peak spike, laser eyes 
+   rock block gold
+   rock block gold, laser eyes 
+
+   rock pink
+   rock pink, peak spike blonde, laser eyes blue 
+   rock pepe
+   rock pepe, peak spike red 
+   rock pepe, top hat 
+   rock pepe, cap red 
+DATA
+
+
+composite  = ImageComposite.new( 6, 3, 
+                                  width: 12, height: 12 )
+
+specs.each_with_index do |spec, i|
+     img = generate( *spec)
+     
+     img.save( "./rock#{i}.png" )
+     img.zoom(10).save( "./rock#{i}@10x.png" )
+     composite << img
+end
+
+composite.save( "./rocks.png" )
+composite.zoom(4).save( "./rocks@4x.png" )
+```
+
+resulting in:
+
+![](i/rock0.png)
+![](i/rock1.png)
+![](i/rock2.png)
+![](i/rock3.png)
+![](i/rock4.png)
+![](i/rock5.png)
+![](i/rock6.png)
+![](i/rock7.png)
+![](i/rock8.png)
+![](i/rock9.png)
+![](i/rock10.png)
+![](i/rock11.png)
+![](i/rock12.png)
+![](i/rock13.png)
+![](i/rock14.png)
+![](i/rock15.png)
+![](i/rock16.png)
+![](i/rock17.png)
+
+
+in 10x
+
+![](i/rock0@10x.png)
+![](i/rock1@10x.png)
+![](i/rock2@10x.png)
+![](i/rock3@10x.png)
+![](i/rock4@10x.png)
+![](i/rock5@10x.png)
+![](i/rock6@10x.png)
+![](i/rock7@10x.png)
+![](i/rock8@10x.png)
+![](i/rock9@10x.png)
+![](i/rock10@10x.png)
+![](i/rock11@10x.png)
+![](i/rock12@10x.png)
+![](i/rock13@10x.png)
+![](i/rock14@10x.png)
+![](i/rock15@10x.png)
+![](i/rock16@10x.png)
+![](i/rock17@10x.png)
+
+
+and the fam (all-in-one image composite)
+
+![](i/rocks.png)
+
+in 4x
+
+![](i/rocks@4x.png)
 
 
 
