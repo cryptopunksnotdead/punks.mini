@@ -75,6 +75,7 @@ ATTRIBUTES = {
       'vangogh',
       'frida',
       'frida_(a)',
+      'girlwithpearl',    # vermeer
       'joe',
       'joe_(a)',
       'donald',
