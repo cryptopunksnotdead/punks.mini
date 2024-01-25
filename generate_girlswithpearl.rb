@@ -5,16 +5,20 @@ require_relative 'base'
 
 
 specs = parse_data( <<DATA )
-   girl with pearl
-   girl with pearl, vr pro   
-   girl with pearl, laser eyes
-   girl with pearl, 3d glasses
-   girl with pearl, regular shades
-   girl with pearl, clown nose  
+    girl with pearl
+    girl with pearl, vr pro   
+    girl with pearl, laser eyes
+    girl with pearl (pepe)
+    girl with pearl (pepe), pipe
+
+    girl with pearl, 3d glasses
+    girl with pearl, regular shades
+    girl with pearl, clown nose  
+    girl with pearl (bitmap orange)
 DATA
 
 
-cols = 3
+cols = 5
 rows = specs.size / cols 
 rows += 1    if specs.size % cols != 0
 
