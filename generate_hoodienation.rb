@@ -5,18 +5,23 @@ require_relative 'base'
 
 
 specs = parse_data( <<DATA )
- male2, luxurious beard, hoodie
- male2, luxurious beard, hood
- male1, normal beard, hoodie dark
- male1, normal beard, hood dark
- ape, hoodie light, regular shades
- ape, hood light
- female3, hoodie pink, big shades
- female3, hood pink
- female2, hood pharoah
- ape, hood pharoah
- pepe, hoodie ice
- male 3, luxurious beard, hoodie ice, regular shades
+  male2, luxurious beard, hoodie
+  male2, luxurious beard, hood
+  male1, normal beard, hoodie dark
+  male1, normal beard, hood dark
+  ape, hoodie light, regular shades
+  ape, hood light
+  female3, hoodie pink, big shades
+  female3, hood pink
+  female2, hood pharoah
+  ape, hood pharoah
+  pepe, hoodie ice
+  male 3, luxurious beard, hoodie ice, regular shades
+
+  pepe, hood pharoah purple
+  pepe, hood pharoah purple (a)
+  pepe, noun glasses pink
+  pepe, noun glasses pink, hood pharoah purple (a)
 DATA
 
 

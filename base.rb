@@ -228,6 +228,8 @@ ATTRIBUTES = {
       'purple_eye_shadow',
       'blue_eye_shadow',
       'heart_shades',
+      'noun_glasses',
+      'noun_glasses_pink',
    ],
    beard: [
       'chinstrap',
@@ -288,6 +290,8 @@ ATTRIBUTES = {
        'hoodie_pink',
        'hood_pink',
        'hood_pharoah',
+       'hood_pharoah_purple',
+       'hood_pharoah_purple_(a)',
    ],
   saudis: [
      'brown_shemagh_agal',
