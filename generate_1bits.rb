@@ -5,6 +5,21 @@ require_relative 'base'
 
 
 specs = parse_data( <<DATA )
+   joe (1bit)
+   joe (1bit), regular shades blue
+   joe (1bit), maxi biz laser eyes blue
+   donald (1bit)
+   donald (1bit), regular shades red
+   donald (1bit), maxi biz laser eyes red
+   nikki (1bit)
+   nikki (1bit), regular shades red
+   nikki (1bit), maxi biz laser eyes red
+
+   pig (1bit), regular shades red
+   pig (1bit), regular shades green
+   pig (1bit), regular shades blue
+   pig (1bit)
+
    ape (1bit), regular shades red
    ape (1bit), regular shades green
    ape (1bit), regular shades blue
