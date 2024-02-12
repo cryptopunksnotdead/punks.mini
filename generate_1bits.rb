@@ -15,10 +15,10 @@ specs = parse_data( <<DATA )
    nikki (1bit), regular shades red
    nikki (1bit), maxi biz laser eyes red
 
-   pig (1bit), regular shades red
-   pig (1bit), regular shades green
-   pig (1bit), regular shades blue
-   pig (1bit)
+   pork (1bit), regular shades red
+   pork (1bit), regular shades green
+   pork (1bit), regular shades blue
+   pork (1bit)
 
    ape (1bit), regular shades red
    ape (1bit), regular shades green
